@@ -14,9 +14,12 @@
     background-image: url(../images/banner/banner1.png);
     background-position: center;
     background-repeat: no-repeat;
-    padding-left: 845px;
+    margin-left: auto;
+    max-width: 100%;
     padding-right: 230px;
     text-align: right;
+    background-size: cover;
+    padding-bottom: 130px;
 
 }
 
@@ -24,16 +27,18 @@
     padding-bottom: 25px;
     font-size: 65px;
     font-weight: 400;
-
-
+    max-width: 525px;
+    margin-left: auto;
 }
 
 .header-details {
-
-    text-align: right;
+    max-width: 525px;
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 30px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header-button {
@@ -47,11 +52,43 @@
 div.failures {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 100px;
 }
 
-li {
-    list-style: none;
+.failure-right {
+    max-width: 416px;
+
+}
+
+.failure-right h2 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    /* max-width: 416px; */
+    padding-bottom: 18px;
+}
+
+.failure-right ul {
+    margin-top: 20px;
+}
+
+.failure-right p,
+.failure-right ul li {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+}
+
+.failure-right ul li {
+    list-style-image: url('../images/icons/001-checkmark.png');
+
 }
 
 div.my-plans {
@@ -66,7 +103,13 @@ div.my-plans {
 .part-heading {
     text-align: center;
 }
-
+.call-now-section{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
 .call-now {
     background-image: url(../images/watch.png);
     position: relative;
@@ -75,6 +118,7 @@ div.my-plans {
     min-height: 300px;
     text-align: left;
     padding-top: 50px;
+    background-size: cover;
     /* overflow: hidden; */
 
 }
@@ -85,7 +129,7 @@ div.my-plans {
     text-decoration-color: #F15B22;
     border-radius: 5px;
     border: none;
-    margin-right: 40px;
+    margin-left: 40px;
     /* not working */
 }
 
@@ -97,6 +141,7 @@ div.my-plans {
     width: 100%;
     left: 0;
     top: 0;
+    background-size: cover;
     /* right: 0; */
 }
 
@@ -124,14 +169,20 @@ div.my-plans {
     max-width: 40%;
 }
 
+.footer-left p {
+    margin-top: 20px;
+}
+
 .contact {
     text-decoration: none;
     display: flex;
-    margin-top: 10px;
+    margin-top: 25px;
 
 }
-.contact li{
+
+.contact li {
     margin-right: 10px;
+    list-style: none;
 }
 
 .email {
